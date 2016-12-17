@@ -1,8 +1,15 @@
 import React from 'react'
 
 
-export default () =>{
-  return(
-    <h1> Hello World </h1>
-  );
+class Helloworld extends React.Component{
+  render(){
+
+    return(
+      <div className="jumbotron">
+        <h1> REACT AND REDUX </h1>
+      </div>
+
+    );
+  }
 }
+export default Helloworld;
