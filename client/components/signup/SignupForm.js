@@ -25,7 +25,7 @@ onChange(e){
 
 onSubmit(e){
   this.preventDefault();
-  console.log(this.state);
+  this.props.userSignupRequest(this.state);
 }
 
   render(){
@@ -92,6 +92,12 @@ onSubmit(e){
 
     );
   }
+}
+
+
+
+SignupForm.propTypes ={
+  userSignupRequest: React.PropTypes.func.isRequired
 }
 
 export  default  SignupForm;
