@@ -1,9 +1,13 @@
 import React from 'react';
+import Helloworld from './Helloworld'
 
+class App extends React.Component{
 
-export default () => {
-  return(
-
-    <h1> Hello from react </h1>
-  );
+  render(){
+    return(
+          <Helloworld />
+    );
+  }
 }
+
+export default App;
